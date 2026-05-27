@@ -76,14 +76,41 @@ export default function Home() {
     <>
       <Hero />
 
+      {/* TECHNOLOGY SECTION */}
+      <section className="tech-section">
+        <div className="jai-container">
+          <div className="section-title">
+            <small>TECHNOLOGY EXPERTISE</small>
+            <h2>Trusted Technologies & Platforms</h2>
+            <p>
+              We leverage modern cloud, AI, DevOps, and enterprise technologies
+              to build scalable digital solutions.
+            </p>
+          </div>
+
+          <div className="tech-grid">
+            <div className="tech-card">OpenAI</div>
+            <div className="tech-card">AWS</div>
+            <div className="tech-card">Azure</div>
+            <div className="tech-card">Docker</div>
+            <div className="tech-card">Kubernetes</div>
+            <div className="tech-card">Next.js</div>
+            <div className="tech-card">React</div>
+            <div className="tech-card">Node.js</div>
+            <div className="tech-card">TypeScript</div>
+            <div className="tech-card">Python</div>
+            <div className="tech-card">DevOps</div>
+            <div className="tech-card">AI Automation</div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section className="home-section">
         <div className="jai-container">
           <div className="section-title">
             <small>OUR SERVICES</small>
-
             <h2>End-to-End Solutions for Your Business</h2>
-
             <p>
               From strategy to deployment, we deliver custom solutions that
               drive efficiency, innovation, and sustainable growth.
@@ -94,9 +121,7 @@ export default function Home() {
             {services.map((service) => (
               <div className="clean-card" key={service.title}>
                 {service.icon}
-
                 <h3>{service.title}</h3>
-
                 <p>{service.description}</p>
               </div>
             ))}
@@ -105,61 +130,112 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE US */}
-<section className="why-choose-section">
-  <div className="jai-container">
-    <div className="section-title">
-      <small>WHY CHOOSE US</small>
-      <h2>Built for Enterprise Growth</h2>
-      <p>
-        We combine AI innovation, cloud-native engineering, secure software
-        delivery, and strong execution to help businesses grow confidently.
-      </p>
-    </div>
+      <section className="why-choose-section">
+        <div className="jai-container">
+          <div className="section-title">
+            <small>WHY CHOOSE US</small>
+            <h2>Built for Enterprise Growth</h2>
+            <p>
+              We combine AI innovation, cloud-native engineering, secure
+              software delivery, and strong execution to help businesses grow
+              confidently.
+            </p>
+          </div>
 
-    <div className="why-grid">
-      <div className="why-item">
-        <h3>AI-First Approach</h3>
-        <p>
-          We design solutions that use AI to improve speed, intelligence,
-          automation, and decision-making.
-        </p>
-      </div>
+          <div className="why-grid">
+            <div className="why-item">
+              <h3>AI-First Approach</h3>
+              <p>
+                We design solutions that use AI to improve speed, intelligence,
+                automation, and decision-making.
+              </p>
+            </div>
 
-      <div className="why-item">
-        <h3>Cloud-Native Scale</h3>
-        <p>
-          Our solutions are designed for modern cloud platforms, scalability,
-          performance, and reliability.
-        </p>
-      </div>
+            <div className="why-item">
+              <h3>Cloud-Native Scale</h3>
+              <p>
+                Our solutions are designed for modern cloud platforms,
+                scalability, performance, and reliability.
+              </p>
+            </div>
 
-      <div className="why-item">
-        <h3>Secure Enterprise Delivery</h3>
-        <p>
-          We focus on security, maintainability, performance, and business
-          continuity from day one.
-        </p>
-      </div>
+            <div className="why-item">
+              <h3>Secure Enterprise Delivery</h3>
+              <p>
+                We focus on security, maintainability, performance, and business
+                continuity from day one.
+              </p>
+            </div>
 
-      <div className="why-item">
-        <h3>End-to-End Support</h3>
-        <p>
-          From strategy to deployment and support, we help businesses across the
-          full digital transformation journey.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="why-item">
+              <h3>End-to-End Support</h3>
+              <p>
+                From strategy to deployment and support, we help businesses
+                across the full digital transformation journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESS SECTION */}
+      <section className="process-section">
+        <div className="jai-container">
+          <div className="section-title">
+            <small>OUR PROCESS</small>
+            <h2>How We Deliver Innovation</h2>
+            <p>
+              We follow a structured and scalable delivery model to transform
+              ideas into intelligent enterprise solutions.
+            </p>
+          </div>
+
+          <div className="process-grid">
+            <div className="process-card">
+              <span>01</span>
+              <h3>Discover</h3>
+              <p>
+                Understand business goals, challenges, infrastructure, and
+                transformation opportunities.
+              </p>
+            </div>
+
+            <div className="process-card">
+              <span>02</span>
+              <h3>Design</h3>
+              <p>
+                Create scalable architecture, workflows, AI integrations, and
+                cloud-native solution strategies.
+              </p>
+            </div>
+
+            <div className="process-card">
+              <span>03</span>
+              <h3>Develop</h3>
+              <p>
+                Build secure, high-performance enterprise applications using
+                modern technologies and DevOps practices.
+              </p>
+            </div>
+
+            <div className="process-card">
+              <span>04</span>
+              <h3>Deploy & Scale</h3>
+              <p>
+                Deploy solutions confidently with monitoring, automation,
+                optimization, and continuous support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* PRODUCTS */}
       <section className="home-section">
         <div className="jai-container">
           <div className="section-title">
             <small>OUR PRODUCTS</small>
-
             <h2>Innovative Products Built for Tomorrow</h2>
-
             <p>
               Our AI-powered products are designed to solve real-world
               challenges and help businesses operate smarter and faster.
@@ -170,9 +246,7 @@ export default function Home() {
             {products.map((product) => (
               <div className="clean-card" key={product.title}>
                 {product.icon}
-
                 <h3>{product.title}</h3>
-
                 <p>{product.description}</p>
               </div>
             ))}
@@ -180,154 +254,117 @@ export default function Home() {
         </div>
       </section>
 
-            {/* ABOUT PREVIEW */}
-<section className="about-preview">
-  <div className="jai-container about-grid">
+      {/* ABOUT PREVIEW */}
+      <section className="about-preview">
+        <div className="jai-container about-grid">
+          <div className="about-left">
+            <small>ABOUT JAI TECHNOLOGIES</small>
+            <h2>Delivering Excellence Through Innovation</h2>
+            <p>
+              JAI Technologies is a global IT solutions provider delivering
+              intelligent software, cloud, and AI-powered solutions that help
+              organizations transform and thrive in a digital-first world.
+            </p>
 
-    <div className="about-left">
-      <small>ABOUT JAI TECHNOLOGIES</small>
+            <div className="about-cards">
+              <div className="mini-card">
+                <h3>Our Mission</h3>
+                <p>Deliver innovative and reliable technology solutions.</p>
+              </div>
 
-      <h2>
-        Delivering Excellence Through Innovation
-      </h2>
+              <div className="mini-card">
+                <h3>Our Vision</h3>
+                <p>Empower businesses through AI and digital transformation.</p>
+              </div>
 
-      <p>
-        JAI Technologies is a global IT solutions provider delivering
-        intelligent software, cloud, and AI-powered solutions that help
-        organizations transform and thrive in a digital-first world.
-      </p>
+              <div className="mini-card">
+                <h3>Our Values</h3>
+                <p>Innovation, integrity, excellence, and customer success.</p>
+              </div>
+            </div>
+          </div>
 
-      <div className="about-cards">
-        <div className="mini-card">
-          <h3>Our Mission</h3>
-          <p>
-            Deliver innovative and reliable technology solutions.
-          </p>
+          <div className="about-right">
+            <img src="/images/company-building.jpg" alt="Company Building" />
+          </div>
         </div>
+      </section>
 
-        <div className="mini-card">
-          <h3>Our Vision</h3>
-          <p>
-            Empower businesses through AI and digital transformation.
-          </p>
+      {/* TESTIMONIALS */}
+      <section className="testimonial-section">
+        <div className="jai-container">
+          <div className="section-title">
+            <small>CLIENT SUCCESS</small>
+            <h2>Trusted by Growing Businesses</h2>
+            <p>
+              We help organizations accelerate innovation through AI, cloud
+              transformation, and enterprise software solutions.
+            </p>
+          </div>
+
+          <div className="testimonial-grid">
+            <div className="testimonial-card">
+              <p>
+                “JAI Technologies helped modernize our cloud infrastructure and
+                significantly improved operational efficiency.”
+              </p>
+              <h4>Michael Anderson</h4>
+              <span>Cloud Operations Director</span>
+            </div>
+
+            <div className="testimonial-card">
+              <p>
+                “Their AI automation solutions transformed our internal
+                workflows and reduced manual effort across teams.”
+              </p>
+              <h4>Sarah Mitchell</h4>
+              <span>Enterprise Solutions Manager</span>
+            </div>
+
+            <div className="testimonial-card">
+              <p>
+                “Professional execution, strong technical expertise, and
+                excellent support throughout the engagement.”
+              </p>
+              <h4>David Wilson</h4>
+              <span>Technology Program Lead</span>
+            </div>
+          </div>
         </div>
-
-        <div className="mini-card">
-          <h3>Our Values</h3>
-          <p>
-            Innovation, integrity, excellence, and customer success.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="about-right">
-  <img
-    src="/images/company-building.jpg"
-    alt="Company Building"
-  />
-</div>
-
-  </div>
-</section> 
+      </section>
 
       {/* CONTACT PREVIEW */}
       <section className="home-section">
         <div className="jai-container">
           <div className="section-title">
             <small>CONTACT US</small>
-
-            <h2>Let's Build Something Great Together</h2>
-
+            <h2>Let&apos;s Build Something Great Together</h2>
             <p>
-              Have a project in mind? Get in touch with us and let's turn your
-              ideas into reality.
+              Have a project in mind? Get in touch with us and let&apos;s turn
+              your ideas into reality.
             </p>
           </div>
 
-          <div
-            style={{
-              background: "white",
-              borderRadius: "20px",
-              padding: "40px",
-              boxShadow: "0 12px 35px rgba(15,23,42,0.06)",
-              border: "1px solid #e5e7eb",
-            }}
-          >
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: "40px",
-              }}
-            >
-              <div>
-                <h3 style={{ fontSize: "30px", marginBottom: "20px" }}>
-                  Contact Information
-                </h3>
-
-                <p>Email: info@jaitechnologies.com</p>
-
-                <p>Phone: +1 (614) 220-4781</p>
-
-                <p>Location: Columbus, Ohio, USA</p>
-              </div>
-
-              <div>
-                <form
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "16px",
-                  }}
-                >
-                  <input
-                    placeholder="Your Name"
-                    style={inputStyle}
-                  />
-
-                  <input
-                    placeholder="Email Address"
-                    style={inputStyle}
-                  />
-
-                  <input
-                    placeholder="Company Name"
-                    style={inputStyle}
-                  />
-
-                  <textarea
-                    placeholder="Message"
-                    rows={5}
-                    style={inputStyle}
-                  />
-
-                  <button
-                    style={{
-                      background: "#155dfc",
-                      color: "white",
-                      border: "none",
-                      padding: "16px",
-                      borderRadius: "10px",
-                      fontWeight: "700",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
+          <div className="contact-grid">
+            <div>
+              <h3 style={{ fontSize: "30px", marginBottom: "20px" }}>
+                Contact Information
+              </h3>
+              <p>Email: info@jaitechnologies.com</p>
+              <p>Phone: +1 (614) 220-4781</p>
+              <p>Location: Columbus, Ohio, USA</p>
             </div>
+
+            <form className="contact-form">
+              <input placeholder="Your Name" />
+              <input placeholder="Email Address" />
+              <input placeholder="Company Name" />
+              <textarea placeholder="Message" rows={5} />
+              <button type="button">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
     </>
   );
 }
-
-const inputStyle = {
-  padding: "16px",
-  borderRadius: "10px",
-  border: "1px solid #cbd5e1",
-  fontSize: "15px",
-};

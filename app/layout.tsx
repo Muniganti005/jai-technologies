@@ -78,8 +78,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="jai-body">
+
         {/* Animated Background */}
         <BackgroundEffects />
 
@@ -94,6 +95,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <Footer />
+
       </body>
     </html>
   );
