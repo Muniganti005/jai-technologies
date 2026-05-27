@@ -1,76 +1,103 @@
-import { Target, Eye, HeartHandshake, Trophy } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="px-6 pt-36 pb-20">
-      <section className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-        <div>
-          <p className="text-sm uppercase tracking-widest text-cyan-400">
-            About JAI Technologies
-          </p>
+    <main>
 
-          <h1 className="mt-4 text-5xl font-bold">
-            Delivering Excellence Through{" "}
-            <span className="gradient-text">Innovation</span>
+      {/* HERO */}
+      <section className="about-hero">
+        <div className="jai-container">
+          <small>ABOUT JAI TECHNOLOGIES</small>
+
+          <h1>
+            Delivering Intelligent Solutions
+            for the Digital Future
           </h1>
 
-          <p className="mt-6 text-lg text-slate-300">
-            JAI Technologies is a modern IT solutions provider delivering
-            intelligent software, cloud, automation, and AI-powered services
-            that help organizations transform and scale.
+          <p>
+            JAI Technologies is focused on AI-powered software solutions,
+            cloud transformation, enterprise applications, automation,
+            and digital innovation.
           </p>
         </div>
+      </section>
 
-        <div className="card p-8">
-          <div className="rounded-3xl bg-gradient-to-br from-blue-900 to-slate-950 p-12 text-center">
-            <h2 className="text-4xl font-bold">JAI</h2>
-            <p className="mt-3 text-slate-300">
-              AI • Cloud • Software • Automation
-            </p>
+      {/* COMPANY SECTION */}
+      <section className="home-section">
+        <div className="jai-container about-company-grid">
+
+          <div>
+            <Image
+              src="/images/company-building.jpg"
+              alt="Company Building"
+              width={700}
+              height={500}
+              className="about-company-img"
+            />
           </div>
+
+          <div>
+            <small className="blue-small">
+              WHO WE ARE
+            </small>
+
+            <h2 className="about-title">
+              Driving Innovation Through Technology
+            </h2>
+
+            <p className="about-text">
+              We help businesses modernize operations using AI, cloud,
+              automation, and enterprise-grade software engineering.
+            </p>
+
+            <div className="about-points">
+              <div>
+                <strong>AI Solutions</strong>
+                <p>Smart automation and intelligent systems.</p>
+              </div>
+
+              <div>
+                <strong>Cloud Transformation</strong>
+                <p>Scalable infrastructure and DevOps delivery.</p>
+              </div>
+
+              <div>
+                <strong>Enterprise Applications</strong>
+                <p>Secure and scalable business platforms.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section className="mx-auto mt-20 grid max-w-7xl gap-6 md:grid-cols-4">
-        <AboutCard
-          Icon={Target}
-          title="Our Mission"
-          text="Deliver innovative and reliable technology solutions."
-        />
-        <AboutCard
-          Icon={Eye}
-          title="Our Vision"
-          text="Become a global leader in AI and digital transformation."
-        />
-        <AboutCard
-          Icon={HeartHandshake}
-          title="Our Values"
-          text="Integrity, innovation, excellence, and customer success."
-        />
-        <AboutCard
-          Icon={Trophy}
-          title="Our Commitment"
-          text="Build long-term partnerships with measurable business impact."
-        />
-      </section>
-    </main>
-  );
-}
+      {/* STATS */}
+      <section className="about-stats">
+        <div className="jai-container stats-grid">
 
-function AboutCard({
-  Icon,
-  title,
-  text,
-}: {
-  Icon: any;
-  title: string;
-  text: string;
-}) {
-  return (
-    <div className="card p-6">
-      <Icon className="mb-4 h-9 w-9 text-cyan-400" />
-      <h3 className="mb-3 text-xl font-bold">{title}</h3>
-      <p className="text-sm text-slate-300">{text}</p>
-    </div>
+          <div>
+            <h2>15+</h2>
+            <p>Years Experience</p>
+          </div>
+
+          <div>
+            <h2>250+</h2>
+            <p>Projects Delivered</p>
+          </div>
+
+          <div>
+            <h2>120+</h2>
+            <p>Clients Worldwide</p>
+          </div>
+
+          <div>
+            <h2>24/7</h2>
+            <p>Global Support</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
   );
 }

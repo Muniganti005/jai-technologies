@@ -1,80 +1,41 @@
-import ServiceCard from "../../components/ServiceCard";
-
-import {
-  Brain,
-  Cloud,
-  Code2,
-  Database,
-  Settings,
-  LifeBuoy,
-} from "lucide-react";
+import { Brain, Cloud, Code2, Database, Workflow, ShieldCheck } from "lucide-react";
 
 const services = [
-  {
-    title: "AI & Automation",
-    description:
-      "AI chatbots, workflow automation, smart document processing, and business automation.",
-    icon: <Brain className="h-8 w-8" />,
-  },
-  {
-    title: "Cloud Solutions",
-    description:
-      "AWS cloud setup, migration, infrastructure, deployment, and monitoring.",
-    icon: <Cloud className="h-8 w-8" />,
-  },
-  {
-    title: "Software Development",
-    description:
-      "Full-stack web apps, backend APIs, dashboards, portals, and enterprise systems.",
-    icon: <Code2 className="h-8 w-8" />,
-  },
-  {
-    title: "Data Engineering",
-    description:
-      "ETL pipelines, AWS Glue, Lambda, S3, PostgreSQL, reporting, and analytics.",
-    icon: <Database className="h-8 w-8" />,
-  },
-  {
-    title: "DevOps",
-    description:
-      "GitHub Actions, CI/CD pipelines, Docker, Kubernetes, monitoring, and automation.",
-    icon: <Settings className="h-8 w-8" />,
-  },
-  {
-    title: "Application Support",
-    description:
-      "Production support, incident management, RCA, SLA tracking, and monitoring.",
-    icon: <LifeBuoy className="h-8 w-8" />,
-  },
+  ["AI & Automation", "AI models, workflow automation, smart assistants, and intelligent business systems.", <Brain size={34} color="#2563eb" />],
+  ["Cloud Solutions", "AWS cloud infrastructure, migration, DevOps, monitoring, and scalable deployments.", <Cloud size={34} color="#2563eb" />],
+  ["Custom Software Development", "Secure, scalable, and high-performance web, mobile, and enterprise applications.", <Code2 size={34} color="#2563eb" />],
+  ["Data Engineering", "ETL pipelines, dashboards, analytics, reporting, and data platform solutions.", <Database size={34} color="#2563eb" />],
+  ["DevOps & Infrastructure", "CI/CD, automation, monitoring, containerization, and cloud-native operations.", <Workflow size={34} color="#2563eb" />],
+  ["IT Consulting", "Technology strategy, architecture guidance, modernization, and delivery support.", <ShieldCheck size={34} color="#2563eb" />],
 ];
 
 export default function ServicesPage() {
   return (
-    <main className="px-6 pt-36 pb-20">
-      <div className="mx-auto max-w-7xl">
-        
-        <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-widest text-cyan-400">
-            Services
+    <main>
+      <section className="about-hero">
+        <div className="jai-container">
+          <small>OUR SERVICES</small>
+          <h1>End-to-End Technology Solutions</h1>
+          <p>
+            AI, cloud, software, data, DevOps, and enterprise support services
+            designed to help businesses innovate and scale.
           </p>
-
-          <h1 className="mt-3 text-5xl font-bold">
-            Complete Technology Services
-          </h1>
         </div>
+      </section>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
-          ))}
+      <section className="home-section">
+        <div className="jai-container">
+          <div className="cards-grid">
+            {services.map(([title, text, icon]) => (
+              <div className="clean-card" key={title as string}>
+                {icon}
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+            ))}
+          </div>
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }

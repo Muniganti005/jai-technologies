@@ -1,32 +1,56 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="border-t border-blue-500/20 bg-slate-950 px-6 py-10">
-      <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-4">
+    <footer className="site-footer">
+      <div className="jai-container footer-grid">
         <div>
-          <h2 className="text-2xl font-bold">JAI Technologies</h2>
-          <p className="mt-3 text-sm text-slate-400">
-            AI-powered software and cloud solutions.
+          <div className="footer-brand">
+            <Image src="/logo.png" alt="JAI" width={48} height={48} />
+            <div>
+              <h2>JAI</h2>
+              <span>TECHNOLOGIES</span>
+            </div>
+          </div>
+
+          <p>
+            AI-powered software and cloud solutions empowering businesses to
+            innovate, automate, and grow.
           </p>
         </div>
 
         <div>
-          <h4 className="font-semibold">Services</h4>
-          <p className="mt-3 text-sm text-slate-400">AI Automation</p>
-          <p className="text-sm text-slate-400">Cloud Solutions</p>
-          <p className="text-sm text-slate-400">Software Development</p>
+          <h3>Quick Links</h3>
+          <Link href="/">Home</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/contact">Contact</Link>
         </div>
 
         <div>
-          <h4 className="font-semibold">Products</h4>
-          <p className="mt-3 text-sm text-slate-400">CogniStar</p>
-          <p className="text-sm text-slate-400">JAI Chatbot</p>
-          <p className="text-sm text-slate-400">Analytics Dashboard</p>
+          <h3>Services</h3>
+          <Link href="/services">AI & Automation</Link>
+          <Link href="/services">Cloud Solutions</Link>
+          <Link href="/services">Custom Development</Link>
+          <Link href="/services">Data Engineering</Link>
+          <Link href="/services">DevOps & Infrastructure</Link>
         </div>
 
         <div>
-          <h4 className="font-semibold">Contact</h4>
-          <p className="mt-3 text-sm text-slate-400">info@jaitechnologies.com</p>
+          <h3>Stay Connected</h3>
+          <p>Subscribe to our newsletter</p>
+
+          <div className="newsletter">
+            <input placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
         </div>
+      </div>
+
+      <div className="footer-bottom">
+        © 2026 JAI Technologies. All Rights Reserved.
       </div>
     </footer>
   );

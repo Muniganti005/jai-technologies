@@ -1,50 +1,82 @@
-import { Bot, Sparkles, BarChart3 } from "lucide-react";
+import {
+  Brain,
+  Bot,
+  BarChart3,
+  Workflow,
+  ShieldCheck,
+  Cloud,
+} from "lucide-react";
 
 const products = [
-  {
-    title: "CogniStar",
-    description:
-      "AI-powered platform for intelligent greetings, automation, and predictive insights.",
-    Icon: Sparkles,
-  },
-  {
-    title: "JAI Chatbot",
-    description:
-      "Smart conversational AI assistant for customer support and business engagement.",
-    Icon: Bot,
-  },
-  {
-    title: "Analytics Dashboard",
-    description:
-      "Real-time business dashboards for reporting, insights, and decision-making.",
-    Icon: BarChart3,
-  },
+  [
+    "CogniStar AI",
+    "AI-powered platform for automation, predictive insights, and intelligent workflows.",
+    <Brain size={34} color="#2563eb" />,
+  ],
+  [
+    "Enterprise AI Chatbot",
+    "Conversational AI for customer support, operations, and engagement.",
+    <Bot size={34} color="#2563eb" />,
+  ],
+  [
+    "Analytics Dashboard",
+    "Business intelligence dashboards with real-time insights and reporting.",
+    <BarChart3 size={34} color="#2563eb" />,
+  ],
+  [
+    "Workflow Automation",
+    "Automate repetitive enterprise processes with smart orchestration.",
+    <Workflow size={34} color="#2563eb" />,
+  ],
+  [
+    "Cloud Management Suite",
+    "Infrastructure monitoring, deployment automation, and cloud operations.",
+    <Cloud size={34} color="#2563eb" />,
+  ],
+  [
+    "Security & Monitoring",
+    "Enterprise-grade monitoring, logging, alerts, and operational visibility.",
+    <ShieldCheck size={34} color="#2563eb" />,
+  ],
 ];
 
 export default function ProductsPage() {
   return (
-    <main className="px-6 pt-36 pb-20">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-widest text-cyan-400">
-            Products
-          </p>
-          <h1 className="mt-3 text-5xl font-bold">
-            Innovative Products Built for Tomorrow
-          </h1>
-        </div>
+    <main>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {products.map(({ title, description, Icon }) => (
-            <div key={title} className="card p-8">
-              <Icon className="mb-5 h-12 w-12 text-cyan-400" />
-              <h2 className="mb-4 text-2xl font-bold">{title}</h2>
-              <p className="text-slate-300">{description}</p>
-              <button className="mt-6 text-cyan-400">Learn More →</button>
-            </div>
-          ))}
+      <section className="about-hero">
+        <div className="jai-container">
+          <small>OUR PRODUCTS</small>
+
+          <h1>
+            Intelligent Platforms Built for Modern Enterprises
+          </h1>
+
+          <p>
+            AI-powered products and enterprise platforms designed to help
+            organizations automate, analyze, and scale efficiently.
+          </p>
         </div>
-      </div>
+      </section>
+
+      <section className="home-section">
+        <div className="jai-container">
+
+          <div className="cards-grid">
+            {products.map(([title, text, icon]) => (
+              <div className="clean-card" key={title as string}>
+                {icon}
+
+                <h3>{title}</h3>
+
+                <p>{text}</p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
 }
