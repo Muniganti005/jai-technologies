@@ -104,6 +104,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY CHOOSE US */}
+<section className="why-choose-section">
+  <div className="jai-container">
+    <div className="section-title">
+      <small>WHY CHOOSE US</small>
+      <h2>Built for Enterprise Growth</h2>
+      <p>
+        We combine AI innovation, cloud-native engineering, secure software
+        delivery, and strong execution to help businesses grow confidently.
+      </p>
+    </div>
+
+    <div className="why-grid">
+      <div className="why-item">
+        <h3>AI-First Approach</h3>
+        <p>
+          We design solutions that use AI to improve speed, intelligence,
+          automation, and decision-making.
+        </p>
+      </div>
+
+      <div className="why-item">
+        <h3>Cloud-Native Scale</h3>
+        <p>
+          Our solutions are designed for modern cloud platforms, scalability,
+          performance, and reliability.
+        </p>
+      </div>
+
+      <div className="why-item">
+        <h3>Secure Enterprise Delivery</h3>
+        <p>
+          We focus on security, maintainability, performance, and business
+          continuity from day one.
+        </p>
+      </div>
+
+      <div className="why-item">
+        <h3>End-to-End Support</h3>
+        <p>
+          From strategy to deployment and support, we help businesses across the
+          full digital transformation journey.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* PRODUCTS */}
       <section className="home-section">
         <div className="jai-container">

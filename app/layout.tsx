@@ -6,7 +6,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ChatBot from "../components/ChatBot";
 
+export const viewport = {
+  themeColor: "#031225",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.jaitechnologies.com"),
+
   title: "JAI Technologies | AI, Cloud & Enterprise Solutions",
 
   description:
@@ -64,8 +70,6 @@ export const metadata: Metadata = {
 
     images: ["/og-image.png"],
   },
-
-  themeColor: "#031225",
 };
 
 export default function RootLayout({
@@ -76,7 +80,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-
         {/* Animated Background */}
         <BackgroundEffects />
 
@@ -91,7 +94,6 @@ export default function RootLayout({
 
         {/* Footer */}
         <Footer />
-
       </body>
     </html>
   );
