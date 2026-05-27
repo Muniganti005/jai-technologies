@@ -129,7 +129,138 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* INDUSTRIES */}
+<section className="home-section">
+  <div className="jai-container">
+
+    <div className="section-title">
+      <small>INDUSTRIES WE SERVE</small>
+
+      <h2>Transforming Industries with AI & Cloud</h2>
+
+      <p>
+        We deliver intelligent enterprise solutions across industries
+        to improve operations, scalability, automation, and innovation.
+      </p>
+    </div>
+
+    <div className="cards-grid">
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🏦</div>
+
+        <h3>Banking & Financial Services</h3>
+
+        <p>
+          Secure digital banking platforms, payment systems,
+          fraud detection, analytics, and cloud modernization.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🏥</div>
+
+        <h3>Healthcare</h3>
+
+        <p>
+          AI-powered healthcare solutions, analytics,
+          secure patient platforms, and operational automation.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🛒</div>
+
+        <h3>Retail & E-Commerce</h3>
+
+        <p>
+          Intelligent customer engagement, recommendation systems,
+          cloud commerce, and analytics platforms.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🚚</div>
+
+        <h3>Logistics & Supply Chain</h3>
+
+        <p>
+          Real-time tracking, workflow automation,
+          predictive analytics, and operational intelligence.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🏭</div>
+
+        <h3>Manufacturing</h3>
+
+        <p>
+          Smart manufacturing, predictive maintenance,
+          automation systems, and cloud infrastructure.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <div className="service-icon-wrap">🎓</div>
+
+        <h3>Education</h3>
+
+        <p>
+          Digital learning platforms, AI-powered education tools,
+          and scalable cloud-based systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+            {/* CASE STUDIES */}
+<section className="case-section">
+  <div className="jai-container">
+    <div className="section-title">
+      <small>CASE STUDIES</small>
+      <h2>Real Business Transformation Use Cases</h2>
+      <p>
+        Practical AI, cloud, and automation solutions designed to solve
+        enterprise challenges and deliver measurable outcomes.
+      </p>
+    </div>
+
+    <div className="case-grid">
+      <div className="case-card">
+        <span>Cloud Modernization</span>
+        <h3>Enterprise Platform Migration</h3>
+        <p>
+          Migrated legacy applications to scalable cloud infrastructure with
+          improved uptime, monitoring, and deployment speed.
+        </p>
+      </div>
+
+      <div className="case-card">
+        <span>AI Automation</span>
+        <h3>Support Workflow Automation</h3>
+        <p>
+          Automated repetitive support workflows using AI assistants, reducing
+          manual effort and improving response time.
+        </p>
+      </div>
+
+      <div className="case-card">
+        <span>Data Intelligence</span>
+        <h3>Real-Time Analytics Dashboard</h3>
+        <p>
+          Built analytics dashboards for operational visibility, decision-making,
+          reporting, and performance tracking.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* WHY CHOOSE US */}
       <section className="why-choose-section">
         <div className="jai-container">
           <div className="section-title">
@@ -332,6 +463,38 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+            {/* ENTERPRISE CTA */}
+<section className="enterprise-cta">
+  <div className="jai-container">
+
+    <div className="enterprise-cta-box">
+
+      <small>READY TO TRANSFORM YOUR BUSINESS?</small>
+
+      <h2>
+        Accelerate Innovation with
+        AI, Cloud & Enterprise Solutions
+      </h2>
+
+      <p>
+        Partner with JAI Technologies to modernize operations,
+        automate workflows, scale infrastructure, and drive
+        intelligent digital transformation.
+      </p>
+
+      <div className="enterprise-cta-buttons">
+        <a href="/contact">Schedule Consultation</a>
+
+        <a href="/services" className="outline">
+          Explore Services
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* CONTACT PREVIEW */}
       <section className="home-section">
