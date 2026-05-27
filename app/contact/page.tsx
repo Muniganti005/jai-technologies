@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Clock } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -10,8 +10,8 @@ export default function ContactPage() {
           <h1>Let’s Build Something Great Together</h1>
 
           <p>
-            Have a project in mind? Contact JAI Technologies and let’s discuss
-            how AI, cloud, and software can help your business.
+            Connect with JAI Technologies to discuss AI automation, cloud
+            transformation, enterprise software, DevOps, and digital solutions.
           </p>
         </div>
       </section>
@@ -26,24 +26,43 @@ export default function ContactPage() {
             </h2>
 
             <p className="about-text">
-              Share your business needs and our team will help identify the
-              right AI, cloud, software, and automation solution.
+              Share your business goals and our team will help identify the
+              right technology strategy, architecture, and delivery approach.
             </p>
 
             <div className="contact-info">
               <p>
                 <Mail size={20} color="#2563eb" />
-                info@jaitechnologies.com
+                Sales: sales@jaitechnologies.com
+              </p>
+
+              <p>
+                <Mail size={20} color="#2563eb" />
+                Support: support@jaitechnologies.com
+              </p>
+
+              <p>
+                <Mail size={20} color="#2563eb" />
+                General: info@jaitechnologies.com
               </p>
 
               <p>
                 <Phone size={20} color="#2563eb" />
-                +1 (614) 220-4781
+                Phone: +1 (614) 220-4781
               </p>
 
               <p>
                 <MapPin size={20} color="#2563eb" />
-                Columbus, Ohio, USA
+                Location: Columbus, Ohio, USA
+              </p>
+
+              <p>
+                <Clock size={20} color="#2563eb" />
+                Business Hours: Mon–Fri | 9:00 AM – 6:00 PM EST
+              </p>
+
+              <p>
+                LinkedIn: JAI Technologies
               </p>
             </div>
           </div>
@@ -53,13 +72,16 @@ export default function ContactPage() {
             <input placeholder="Email Address" />
             <input placeholder="Company Name" />
 
-            <select>
-              <option>Select Service</option>
+            <select defaultValue="">
+              <option value="" disabled>
+                Select Service
+              </option>
               <option>AI & Automation</option>
               <option>Cloud Solutions</option>
               <option>Custom Software Development</option>
               <option>Data Engineering</option>
               <option>DevOps & Infrastructure</option>
+              <option>IT Consulting</option>
             </select>
 
             <textarea placeholder="Tell us about your project" rows={5} />

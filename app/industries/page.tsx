@@ -1,37 +1,54 @@
-export default function IndustriesPage() {
-  const industries = [
-    "Banking & Finance",
-    "Healthcare",
-    "Retail & E-Commerce",
-    "Logistics",
-    "Education",
-    "Enterprise IT",
-  ];
+const resources = [
+  {
+    title: "Blog",
+    description:
+      "Latest insights on AI, cloud computing, DevOps, automation, and enterprise software trends.",
+  },
+  {
+    title: "Case Studies",
+    description:
+      "Real-world transformation stories showcasing measurable business impact and innovation.",
+  },
+  {
+    title: "Whitepapers",
+    description:
+      "Technical research, architecture guides, and enterprise modernization strategies.",
+  },
+  {
+    title: "FAQs",
+    description:
+      "Answers to common questions about our services, technologies, support, and delivery model.",
+  },
+];
 
+export default function ResourcesPage() {
   return (
-    <main className="home-section">
-      <div className="jai-container">
-        <div className="section-title">
-          <small>INDUSTRIES</small>
-          <h2>Solutions Built for Every Industry</h2>
+    <main>
+      <section className="about-hero">
+        <div className="jai-container">
+          <small>RESOURCES</small>
+
+          <h1>Insights & Resources</h1>
+
           <p>
-            JAI Technologies delivers AI, cloud, and software solutions for
-            businesses across multiple industries.
+            Explore expert content, practical guides, case studies, and
+            technology resources from JAI Technologies.
           </p>
         </div>
+      </section>
 
-        <div className="cards-grid">
-          {industries.map((item) => (
-            <div className="clean-card" key={item}>
-              <h3>{item}</h3>
-              <p>
-                Intelligent technology solutions designed to improve operations,
-                automation, scalability, and customer experience.
-              </p>
-            </div>
-          ))}
+      <section className="home-section">
+        <div className="jai-container">
+          <div className="cards-grid">
+            {resources.map((item) => (
+              <div className="clean-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

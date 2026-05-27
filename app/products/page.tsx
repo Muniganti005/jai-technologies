@@ -8,75 +8,84 @@ import {
 } from "lucide-react";
 
 const products = [
-  [
-    "CogniStar AI",
-    "AI-powered platform for automation, predictive insights, and intelligent workflows.",
-    <Brain size={34} color="#2563eb" />,
-  ],
-  [
-    "Enterprise AI Chatbot",
-    "Conversational AI for customer support, operations, and engagement.",
-    <Bot size={34} color="#2563eb" />,
-  ],
-  [
-    "Analytics Dashboard",
-    "Business intelligence dashboards with real-time insights and reporting.",
-    <BarChart3 size={34} color="#2563eb" />,
-  ],
-  [
-    "Workflow Automation",
-    "Automate repetitive enterprise processes with smart orchestration.",
-    <Workflow size={34} color="#2563eb" />,
-  ],
-  [
-    "Cloud Management Suite",
-    "Infrastructure monitoring, deployment automation, and cloud operations.",
-    <Cloud size={34} color="#2563eb" />,
-  ],
-  [
-    "Security & Monitoring",
-    "Enterprise-grade monitoring, logging, alerts, and operational visibility.",
-    <ShieldCheck size={34} color="#2563eb" />,
-  ],
+  {
+    title: "CogniStar AI",
+    description:
+      "AI-powered intelligence platform for automation, predictive insights, and decision support.",
+    icon: <Brain size={42} color="#2563eb" />,
+  },
+  {
+    title: "Enterprise AI Chatbot",
+    description:
+      "Conversational AI assistant for customer support, lead capture, and internal operations.",
+    icon: <Bot size={42} color="#2563eb" />,
+  },
+  {
+    title: "Analytics Dashboard",
+    description:
+      "Real-time dashboards for business intelligence, reporting, and operational visibility.",
+    icon: <BarChart3 size={42} color="#2563eb" />,
+  },
+  {
+    title: "Workflow Automation Suite",
+    description:
+      "Smart automation platform for reducing manual tasks and improving process efficiency.",
+    icon: <Workflow size={42} color="#2563eb" />,
+  },
+  {
+    title: "Cloud Management Platform",
+    description:
+      "Cloud monitoring, deployment automation, infrastructure visibility, and governance tools.",
+    icon: <Cloud size={42} color="#2563eb" />,
+  },
+  {
+    title: "Security & Monitoring",
+    description:
+      "Enterprise monitoring, alerts, logs, compliance visibility, and operational security.",
+    icon: <ShieldCheck size={42} color="#2563eb" />,
+  },
 ];
 
 export default function ProductsPage() {
   return (
     <main>
-
       <section className="about-hero">
         <div className="jai-container">
-          <small>OUR PRODUCTS</small>
+          <small>PRODUCTS</small>
 
-          <h1>
-            Intelligent Platforms Built for Modern Enterprises
-          </h1>
+          <h1>AI-Powered Products for Modern Enterprises</h1>
 
           <p>
-            AI-powered products and enterprise platforms designed to help
-            organizations automate, analyze, and scale efficiently.
+            Explore intelligent platforms and digital products designed to help
+            organizations automate, analyze, monitor, and scale faster.
           </p>
         </div>
       </section>
 
       <section className="home-section">
         <div className="jai-container">
+          <div className="section-title">
+            <small>OUR PRODUCTS</small>
+
+            <h2>Innovative Platforms Built for Tomorrow</h2>
+
+            <p>
+              Our product ecosystem brings together AI, analytics, cloud
+              management, automation, and security for enterprise growth.
+            </p>
+          </div>
 
           <div className="cards-grid">
-            {products.map(([title, text, icon]) => (
-              <div className="clean-card" key={title as string}>
-                {icon}
-
-                <h3>{title}</h3>
-
-                <p>{text}</p>
+            {products.map((product) => (
+              <div className="clean-card" key={product.title}>
+                {product.icon}
+                <h3>{product.title}</h3>
+                <p>{product.description}</p>
               </div>
             ))}
           </div>
-
         </div>
       </section>
-
     </main>
   );
 }

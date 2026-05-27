@@ -27,7 +27,7 @@ export default function Hero() {
 
         <div className="hero-right">
           <Image
-            src="/images/ai-hero.png"
+            src="/images/hero-ai-clean.png"
             alt="AI Technology"
             width={760}
             height={520}

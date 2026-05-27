@@ -46,16 +46,14 @@ a {
 }
 
 .nav-logo {
-  width: 155px;
-  height: 54px;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  gap: 14px;
 }
 
 .jai-logo {
-  width: 155px !important;
-  height: 54px !important;
+  width: 68px !important;
+  height: 68px !important;
   object-fit: contain !important;
   display: block;
 }
@@ -853,5 +851,25 @@ a {
 .hero-grid {
   position: relative;
   z-index: 2;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-text strong {
+  font-size: 38px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-text span {
+  color: #cbd5e1;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 4px;
 }
 }
