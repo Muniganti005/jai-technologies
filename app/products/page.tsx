@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   Brain,
@@ -12,6 +13,7 @@ const products = [
   {
     title: "CogniTip",
     href: "/products/cognitip",
+    image: "/images/cognitip.png",
     description:
       "AI-powered guidance and recommendation assistant that helps users make faster decisions with smart tips and contextual suggestions.",
     icon: <Brain size={42} color="#2563eb" />,
@@ -19,6 +21,7 @@ const products = [
   {
     title: "CogniStar AI",
     href: "/products/cognistar",
+    image: "/images/cognistar.png",
     description:
       "Enterprise AI intelligence platform for automation, predictive insights, workflow optimization, and decision support.",
     icon: <Brain size={42} color="#2563eb" />,
@@ -26,6 +29,7 @@ const products = [
   {
     title: "CogniQuotes",
     href: "/products/cogniquotes",
+    image: "/images/cogniquotes.png",
     description:
       "Smart quote and proposal automation platform for generating accurate business quotes, estimates, and customer-ready documents faster.",
     icon: <BarChart3 size={42} color="#2563eb" />,
@@ -33,6 +37,7 @@ const products = [
   {
     title: "CogniPoc",
     href: "/products/cognipoc",
+    image: "/images/cognipoc.png",
     description:
       "Rapid AI proof-of-concept builder that helps enterprises validate ideas, build demos, and test automation use cases quickly.",
     icon: <Workflow size={42} color="#2563eb" />,
@@ -40,6 +45,7 @@ const products = [
   {
     title: "Enterprise AI Chatbot",
     href: "/products",
+    image: "/images/ai-dashboard.png",
     description:
       "Secure conversational AI assistant for customer support, lead capture, employee helpdesk, and internal business operations.",
     icon: <Bot size={42} color="#2563eb" />,
@@ -47,6 +53,7 @@ const products = [
   {
     title: "AI Automation Suite",
     href: "/products",
+    image: "/images/automation-flow.png",
     description:
       "End-to-end automation platform for document processing, workflow automation, reporting, alerts, and operational efficiency.",
     icon: <Workflow size={42} color="#2563eb" />,
@@ -54,6 +61,7 @@ const products = [
   {
     title: "Cloud Management Platform",
     href: "/products",
+    image: "/images/cloud-infra.png",
     description:
       "Cloud monitoring, deployment automation, infrastructure visibility, cost governance, and enterprise cloud operations tools.",
     icon: <Cloud size={42} color="#2563eb" />,
@@ -61,6 +69,7 @@ const products = [
   {
     title: "Security & Monitoring",
     href: "/products",
+    image: "/images/analytics-ui.png",
     description:
       "Enterprise monitoring, alerts, logs, compliance visibility, vulnerability awareness, and operational security insights.",
     icon: <ShieldCheck size={42} color="#2563eb" />,
@@ -97,19 +106,29 @@ export default function ProductsPage() {
           </div>
 
           <div className="cards-grid">
-            {products.map((product) => (
-              <Link
-                href={product.href}
-                className="clean-card product-link-card"
-                key={product.title}
-              >
-                {product.icon}
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-                <span className="learn-more">Learn More →</span>
-              </Link>
-            ))}
-          </div>
+  {products.map((product) => (
+    <Link
+      href={product.href}
+      className="clean-card product-link-card"
+      key={`${product.title}-${product.href}`}
+    >
+      <Image
+        src={product.image}
+        alt={product.title}
+        width={500}
+        height={300}
+      />
+
+      {product.icon}
+
+      <h3>{product.title}</h3>
+
+      <p>{product.description}</p>
+
+      <span className="learn-more">Learn More →</span>
+    </Link>
+  ))}
+</div>
         </div>
       </section>
     </main>

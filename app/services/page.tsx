@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   Brain,
@@ -12,6 +13,7 @@ const services = [
   {
     title: "AI & Automation",
     href: "/services/ai-automation",
+    image: "/images/automation-flow.png",
     description:
       "Intelligent AI solutions, automation workflows, predictive analytics, and enterprise AI systems.",
     icon: <Brain size={42} color="#2563eb" />,
@@ -19,6 +21,7 @@ const services = [
   {
     title: "Cloud Solutions",
     href: "/services/cloud-devops",
+    image: "/images/cloud-infra.png",
     description:
       "Cloud migration, AWS infrastructure, scalable deployments, and cloud-native modernization.",
     icon: <Cloud size={42} color="#2563eb" />,
@@ -26,6 +29,7 @@ const services = [
   {
     title: "Custom Software Development",
     href: "/services",
+    image: "/images/ai-dashboard.png",
     description:
       "Secure and scalable enterprise applications tailored for modern business needs.",
     icon: <Code2 size={42} color="#2563eb" />,
@@ -33,6 +37,7 @@ const services = [
   {
     title: "Data Engineering",
     href: "/services/data-engineering",
+    image: "/images/analytics-ui.png",
     description:
       "ETL pipelines, big data processing, analytics platforms, and business intelligence solutions.",
     icon: <Database size={42} color="#2563eb" />,
@@ -40,6 +45,7 @@ const services = [
   {
     title: "DevOps & Infrastructure",
     href: "/services/cloud-devops",
+    image: "/images/cloud-infra.png",
     description:
       "CI/CD automation, monitoring, Kubernetes, Docker, and infrastructure optimization.",
     icon: <Workflow size={42} color="#2563eb" />,
@@ -47,6 +53,7 @@ const services = [
   {
     title: "IT Consulting",
     href: "/services",
+    image: "/images/ai-dashboard.png",
     description:
       "Enterprise technology consulting, architecture planning, and digital transformation strategy.",
     icon: <ShieldCheck size={42} color="#2563eb" />,
@@ -86,6 +93,12 @@ export default function ServicesPage() {
                 className="clean-card product-link-card"
                 key={service.title}
               >
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={500}
+                  height={300}
+                />
                 {service.icon}
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>

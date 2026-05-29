@@ -1381,7 +1381,6 @@ img {
 /* EXTRA MOBILE POLISH */
 
 @media (max-width: 640px) {
-
   .footer-bottom-inner div {
     flex-direction: column;
     gap: 10px;
@@ -1398,22 +1397,10 @@ img {
   .enterprise-cta-box {
     border-radius: 24px;
   }
-
-
-/* FIRST-FIX Navbar contact button fix */
-.nav-menu .mobile-contact-btn {
-  display: none !important;
 }
 
-@media (max-width: 768px) {
-  .nav-menu.active .mobile-contact-btn {
-    display: inline-flex !important;
-  }
+/* FIRST-FIX CARD LINKS */
 
-  .desktop-contact {
-    display: none !important;
-  }
-}
 .product-link-card {
   display: block;
   color: inherit;
@@ -1431,4 +1418,42 @@ img {
   color: #2563eb;
   font-weight: 900;
 }
+
+/* FIRST-FIX IMAGE CARDS */
+
+.clean-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+.product-link-card {
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.product-link-card img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.product-link-card svg {
+  margin-bottom: 8px;
+}
+
+.product-link-card h3 {
+  margin-top: 10px;
+}
+
+.product-link-card p {
+  min-height: 90px;
+}
+
+.product-link-card:hover img {
+  transform: scale(1.04);
 }

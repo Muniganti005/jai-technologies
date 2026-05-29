@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "../components/Hero";
 
 import {
@@ -151,6 +152,83 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
+      
+            {/* ENTERPRISE SOLUTIONS */}
+      <section className="home-section">
+        <div className="jai-container">
+          <div className="section-title">
+            <small>ENTERPRISE SOLUTIONS</small>
+            <h2>AI, Cloud & Data Platforms Built for Scale</h2>
+            <p>
+              Explore intelligent platforms and enterprise architectures that
+              help organizations automate operations, modernize cloud
+              environments, and unlock data-driven insights.
+            </p>
+          </div>
+
+          <div className="cards-grid">
+            <div className="clean-card">
+              <Image
+                src="/images/automation-flow.png"
+                alt="AI Automation"
+                width={500}
+                height={300}
+              />
+              <h3>AI Automation</h3>
+              <p>
+                Intelligent workflow automation that reduces manual effort,
+                improves productivity, and accelerates business operations.
+              </p>
+            </div>
+
+            <div className="clean-card">
+              <Image
+                src="/images/cloud-infra.png"
+                alt="Cloud Engineering"
+                width={500}
+                height={300}
+              />
+              <h3>Cloud Engineering</h3>
+              <p>
+                Secure, scalable cloud-native infrastructure built using modern
+                DevOps and platform engineering practices.
+              </p>
+            </div>
+
+            <div className="clean-card">
+              <Image
+                src="/images/ai-dashboard.png"
+                alt="Data Engineering"
+                width={500}
+                height={300}
+              />
+              <h3>Data Engineering</h3>
+              <p>
+                Modern ETL pipelines, data platforms, and analytics architectures
+                that transform raw data into business value.
+              </p>
+            </div>
+
+            <div className="clean-card">
+              <Image
+                src="/images/analytics-ui.png"
+                alt="Enterprise Analytics"
+                width={500}
+                height={300}
+              />
+              <h3>Enterprise Analytics</h3>
+              <p>
+                Executive dashboards, business intelligence, KPI monitoring, and
+                real-time operational insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+
+
 
       {/* SERVICES */}
       <section className="home-section">
@@ -165,14 +243,14 @@ export default function Home() {
           </div>
 
           <div className="cards-grid">
-            {services.map((service) => (
-              <div className="clean-card" key={service.title}>
-                {service.icon}
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))}
-          </div>
+  {services.map((service) => (
+    <div className="clean-card" key={service.title}>
+      {service.icon}
+      <h3>{service.title}</h3>
+      <p>{service.description}</p>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
