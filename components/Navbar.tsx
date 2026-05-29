@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Services", href: "/services" },
   { name: "Products", href: "/products" },
   { name: "Industries", href: "/industries" },
+  { name: "Case Studies", href: "/case-studies" },
   { name: "Careers", href: "/careers" },
   { name: "Resources", href: "/resources" },
 ];
@@ -47,14 +48,6 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-
-          <Link
-            href="/contact"
-            className="nav-contact mobile-contact-btn"
-            onClick={() => setOpen(false)}
-          >
-            Contact Us
-          </Link>
         </nav>
 
         <Link href="/contact" className="nav-contact desktop-contact">

@@ -1451,4 +1451,33 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.mobile-contact-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-btn {
+    display: inline-flex;
+  }
+
+  .desktop-contact {
+    display: none;
+  }
+}
+
+/* FIRST-FIX Navbar contact button fix */
+.nav-menu .mobile-contact-btn {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .nav-menu.active .mobile-contact-btn {
+    display: inline-flex !important;
+  }
+
+  .desktop-contact {
+    display: none !important;
+  }
+}
 }
