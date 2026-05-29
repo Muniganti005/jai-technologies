@@ -5,20 +5,23 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Products", href: "/products" },
+  { name: "Industries", href: "/industries" },
+  { name: "Careers", href: "/careers" },
+  { name: "Resources", href: "/resources" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="jai-navbar">
       <div className="jai-container nav-row">
-
-        {/* LOGO */}
-        <Link
-          href="/"
-          className="nav-logo"
-          onClick={() => setOpen(false)}
-        >
-
+        <Link href="/" className="nav-logo" onClick={() => setOpen(false)}>
           <Image
             src="/logo.png"
             alt="JAI Technologies"
@@ -32,45 +35,19 @@ export default function Navbar() {
             <strong>JAI</strong>
             <span>TECHNOLOGIES</span>
           </div>
-
         </Link>
 
-        {/* NAVIGATION */}
         <nav className={`nav-menu ${open ? "active" : ""}`}>
+          {navLinks.map((link) => (
+            <Link
+              href={link.href}
+              key={link.name}
+              onClick={() => setOpen(false)}
+            >
+              {link.name}
+            </Link>
+          ))}
 
-          <Link href="/" onClick={() => setOpen(false)}>
-            Home
-          </Link>
-
-          <Link href="/about" onClick={() => setOpen(false)}>
-            About
-          </Link>
-
-          <Link href="/services" onClick={() => setOpen(false)}>
-            Services
-          </Link>
-
-          <Link href="/products" onClick={() => setOpen(false)}>
-            Products
-          </Link>
-
-          <Link href="/industries" onClick={() => setOpen(false)}>
-            Industries
-          </Link>
-
-          <Link href="/careers" onClick={() => setOpen(false)}>
-            Careers
-          </Link>
-
-          <Link href="/resources" onClick={() => setOpen(false)}>
-            Resources
-          </Link>
-
-          <Link href="/contact" onClick={() => setOpen(false)}>
-            Contact
-          </Link>
-
-          {/* MOBILE CONTACT BUTTON */}
           <Link
             href="/contact"
             className="nav-contact mobile-contact-btn"
@@ -78,26 +55,19 @@ export default function Navbar() {
           >
             Contact Us
           </Link>
-
         </nav>
 
-        {/* DESKTOP CONTACT BUTTON */}
-        <Link
-          href="/contact"
-          className="nav-contact desktop-contact"
-        >
+        <Link href="/contact" className="nav-contact desktop-contact">
           Contact Us
         </Link>
 
-        {/* MOBILE MENU BUTTON */}
         <button
           className="mobile-menu-btn"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle Menu"
+          aria-label="Toggle mobile menu"
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          {open ? <X size={30} /> : <Menu size={30} />}
         </button>
-
       </div>
     </header>
   );

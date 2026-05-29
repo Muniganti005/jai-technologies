@@ -1,56 +1,84 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="jai-container footer-grid">
-        <div>
-          <div className="footer-brand">
-            <Image src="/logo.png" alt="JAI" width={48} height={48} />
-            <div>
-              <h2>JAI</h2>
-              <span>TECHNOLOGIES</span>
-            </div>
-          </div>
-
+      <div className="jai-container footer-top">
+        <div className="footer-brand-block">
+          <h2>JAI Technologies</h2>
           <p>
-            AI-powered software and cloud solutions empowering businesses to
-            innovate, automate, and grow.
+            AI-powered software, cloud transformation, automation, DevOps, and
+            enterprise digital solutions for modern businesses.
           </p>
+
+          <div className="footer-socials">
+
+  <a href="#">
+    IN
+  </a>
+
+  <a href="https://github.com/Muniganti005/jai-technologies">
+    GH
+  </a>
+
+</div>
         </div>
 
         <div>
-          <h3>Quick Links</h3>
+          <h3>Company</h3>
           <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/industries">Industries</Link>
+          <Link href="/careers">Careers</Link>
+          <Link href="/resources">Resources</Link>
         </div>
 
         <div>
           <h3>Services</h3>
           <Link href="/services">AI & Automation</Link>
           <Link href="/services">Cloud Solutions</Link>
-          <Link href="/services">Custom Development</Link>
+          <Link href="/services">Custom Software</Link>
           <Link href="/services">Data Engineering</Link>
-          <Link href="/services">DevOps & Infrastructure</Link>
+          <Link href="/services">DevOps</Link>
         </div>
 
         <div>
-          <h3>Stay Connected</h3>
-          <p>Subscribe to our newsletter</p>
+          <h3>Contact</h3>
 
-          <div className="newsletter">
-            <input placeholder="Enter your email" />
-            <button>Subscribe</button>
-          </div>
+          <p>
+            <Mail size={16} />
+            info@jaitechnologies.com
+          </p>
+
+          <p>
+            <Phone size={16} />
+            +1 (614) 220-4781
+          </p>
+
+          <p>
+            <MapPin size={16} />
+            Columbus, Ohio, USA
+          </p>
         </div>
       </div>
 
+      <div className="jai-container footer-cert-strip">
+        <span>AI-First Solutions</span>
+        <span>Cloud-Native Architecture</span>
+        <span>Enterprise Security</span>
+        <span>DevOps Delivery</span>
+      </div>
+
       <div className="footer-bottom">
-        © 2026 JAI Technologies. All Rights Reserved.
+        <div className="jai-container footer-bottom-inner">
+          <span>© 2026 JAI Technologies. All rights reserved.</span>
+
+          <div>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Terms of Service</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
