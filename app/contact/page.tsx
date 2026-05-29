@@ -1,5 +1,11 @@
 import { Mail, MapPin, Phone, Send, Clock } from "lucide-react";
 
+export const metadata = {
+  title: "Contact | JAI Technologies",
+  description:
+    "Contact JAI Technologies for AI automation, cloud transformation, software development, data engineering, DevOps, and enterprise technology solutions.",
+};
+
 export default function ContactPage() {
   return (
     <main>
