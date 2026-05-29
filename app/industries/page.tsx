@@ -1,53 +1,56 @@
-const resources = [
+const industries = [
   {
-    title: "Blog",
+    title: "Banking & Financial Services",
     description:
-      "Latest insights on AI, cloud computing, DevOps, automation, and enterprise software trends.",
+      "Secure digital banking platforms, fraud detection, payment workflows, AI analytics, and cloud modernization for financial institutions.",
   },
   {
-    title: "Case Studies",
+    title: "Healthcare",
     description:
-      "Real-world transformation stories showcasing measurable business impact and innovation.",
+      "AI-powered healthcare platforms, secure patient data systems, operational automation, analytics, and cloud-based healthcare solutions.",
   },
   {
-    title: "Whitepapers",
+    title: "Retail & E-Commerce",
     description:
-      "Technical research, architecture guides, and enterprise modernization strategies.",
+      "Personalized shopping experiences, recommendation engines, inventory intelligence, customer engagement, and scalable commerce platforms.",
   },
   {
-    title: "FAQs",
+    title: "Insurance",
     description:
-      "Answers to common questions about our services, technologies, support, and delivery model.",
+      "Claims automation, policy workflow systems, risk analytics, AI assistants, and secure digital insurance platforms.",
+  },
+  {
+    title: "Education",
+    description:
+      "Digital learning platforms, AI tutoring tools, student engagement systems, automation, and cloud-based education solutions.",
+  },
+  {
+    title: "Startups & SMBs",
+    description:
+      "Fast, scalable AI, cloud, web, and automation solutions for growing businesses that need enterprise-quality technology.",
   },
 ];
 
-export default function ResourcesPage() {
+export default function IndustriesPage() {
   return (
-    <main>
-      <section className="about-hero">
-        <div className="jai-container">
-          <small>RESOURCES</small>
-
-          <h1>Insights & Resources</h1>
-
-          <p>
-            Explore expert content, practical guides, case studies, and
-            technology resources from JAI Technologies.
-          </p>
-        </div>
+    <main className="page">
+      <section className="section hero-section">
+        <p className="eyebrow">INDUSTRIES</p>
+        <h1>AI & Cloud Solutions for Modern Industries</h1>
+        <p className="section-subtitle">
+          JAI Technologies helps businesses across industries modernize operations,
+          automate workflows, improve customer experiences, and scale with secure
+          AI-powered cloud platforms.
+        </p>
       </section>
 
-      <section className="home-section">
-        <div className="jai-container">
-          <div className="cards-grid">
-            {resources.map((item) => (
-              <div className="clean-card" key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+      <section className="section grid-section">
+        {industries.map((industry) => (
+          <div className="card" key={industry.title}>
+            <h3>{industry.title}</h3>
+            <p>{industry.description}</p>
           </div>
-        </div>
+        ))}
       </section>
     </main>
   );
