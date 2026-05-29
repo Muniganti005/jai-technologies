@@ -43,32 +43,32 @@ const products = [
     icon: <Workflow size={42} color="#2563eb" />,
   },
   {
-    title: "Enterprise AI Chatbot",
-    href: "/products",
+  title: "Enterprise AI Chatbot",
+  href: "/products/enterprise-chatbot",
     image: "/images/ai-dashboard.png",
     description:
       "Secure conversational AI assistant for customer support, lead capture, employee helpdesk, and internal business operations.",
     icon: <Bot size={42} color="#2563eb" />,
   },
   {
-    title: "AI Automation Suite",
-    href: "/products",
+  title: "AI Automation Suite",
+  href: "/products/ai-automation-suite",
     image: "/images/automation-flow.png",
     description:
       "End-to-end automation platform for document processing, workflow automation, reporting, alerts, and operational efficiency.",
     icon: <Workflow size={42} color="#2563eb" />,
   },
   {
-    title: "Cloud Management Platform",
-    href: "/products",
+  title: "Cloud Management Platform",
+  href: "/products/cloud-management",
     image: "/images/cloud-infra.png",
     description:
       "Cloud monitoring, deployment automation, infrastructure visibility, cost governance, and enterprise cloud operations tools.",
     icon: <Cloud size={42} color="#2563eb" />,
   },
   {
-    title: "Security & Monitoring",
-    href: "/products",
+  title: "Security & Monitoring",
+  href: "/products/security-monitoring",
     image: "/images/analytics-ui.png",
     description:
       "Enterprise monitoring, alerts, logs, compliance visibility, vulnerability awareness, and operational security insights.",
