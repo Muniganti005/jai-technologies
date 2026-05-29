@@ -1414,4 +1414,21 @@ img {
     display: none !important;
   }
 }
+.product-link-card {
+  display: block;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.product-link-card:hover {
+  transform: translateY(-8px);
+  border-color: #2563eb;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2563eb;
+  font-weight: 900;
+}
 }
