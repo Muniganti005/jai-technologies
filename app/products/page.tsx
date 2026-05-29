@@ -9,39 +9,51 @@ import {
 
 const products = [
   {
+    title: "CogniTip",
+    description:
+      "AI-powered guidance and recommendation assistant that helps users make faster decisions with smart tips and contextual suggestions.",
+    icon: <Brain size={42} color="#2563eb" />,
+  },
+  {
     title: "CogniStar AI",
     description:
-      "AI-powered intelligence platform for automation, predictive insights, and decision support.",
+      "Enterprise AI intelligence platform for automation, predictive insights, workflow optimization, and decision support.",
     icon: <Brain size={42} color="#2563eb" />,
+  },
+  {
+    title: "CogniQuotes",
+    description:
+      "Smart quote and proposal automation platform for generating accurate business quotes, estimates, and customer-ready documents faster.",
+    icon: <BarChart3 size={42} color="#2563eb" />,
+  },
+  {
+    title: "CogniPoc",
+    description:
+      "Rapid AI proof-of-concept builder that helps enterprises validate ideas, build demos, and test automation use cases quickly.",
+    icon: <Workflow size={42} color="#2563eb" />,
   },
   {
     title: "Enterprise AI Chatbot",
     description:
-      "Conversational AI assistant for customer support, lead capture, and internal operations.",
+      "Secure conversational AI assistant for customer support, lead capture, employee helpdesk, and internal business operations.",
     icon: <Bot size={42} color="#2563eb" />,
   },
   {
-    title: "Analytics Dashboard",
+    title: "AI Automation Suite",
     description:
-      "Real-time dashboards for business intelligence, reporting, and operational visibility.",
-    icon: <BarChart3 size={42} color="#2563eb" />,
-  },
-  {
-    title: "Workflow Automation Suite",
-    description:
-      "Smart automation platform for reducing manual tasks and improving process efficiency.",
+      "End-to-end automation platform for document processing, workflow automation, reporting, alerts, and operational efficiency.",
     icon: <Workflow size={42} color="#2563eb" />,
   },
   {
     title: "Cloud Management Platform",
     description:
-      "Cloud monitoring, deployment automation, infrastructure visibility, and governance tools.",
+      "Cloud monitoring, deployment automation, infrastructure visibility, cost governance, and enterprise cloud operations tools.",
     icon: <Cloud size={42} color="#2563eb" />,
   },
   {
     title: "Security & Monitoring",
     description:
-      "Enterprise monitoring, alerts, logs, compliance visibility, and operational security.",
+      "Enterprise monitoring, alerts, logs, compliance visibility, vulnerability awareness, and operational security insights.",
     icon: <ShieldCheck size={42} color="#2563eb" />,
   },
 ];
