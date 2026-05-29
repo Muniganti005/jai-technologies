@@ -46,6 +46,12 @@ const industries = [
   },
 ];
 
+export const metadata = {
+  title: "Industries | JAI Technologies",
+  description:
+    "Technology solutions for Banking, Healthcare, Retail, Insurance, Education, and Startups powered by AI and Cloud.",
+};
+
 export default function IndustriesPage() {
   return (
     <main>

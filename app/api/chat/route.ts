@@ -1,13 +1,7 @@
 import OpenAI from "openai";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-
     if (!process.env.OPENAI_API_KEY) {
       return Response.json({
         reply:
@@ -15,13 +9,19 @@ export async function POST(req: Request) {
       });
     }
 
+    const client = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+
+    const body = await req.json();
+
     const completion = await client.chat.completions.create({
       model: "gpt-4.1-mini",
       messages: [
         {
           role: "system",
           content:
-            "You are JAI Technologies AI Assistant. Answer website visitors about JAI Technologies services: AI automation, cloud solutions, software development, data engineering, DevOps, products, careers, and contact information. Keep answers short and professional.",
+            "You are JAI Technologies AI Assistant. Answer website visitors about JAI Technologies services, AI automation, cloud solutions, software development, data engineering, DevOps, products, careers, and contact information. Keep answers short and professional.",
         },
         {
           role: "user",

@@ -76,6 +76,12 @@ const products = [
   },
 ];
 
+export const metadata = {
+  title: "Products | JAI Technologies",
+  description:
+    "Explore CogniTip, CogniStar AI, CogniQuotes, CogniPoc, and enterprise AI products built for modern businesses.",
+};
+
 export default function ProductsPage() {
   return (
     <main>

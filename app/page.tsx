@@ -90,7 +90,14 @@ const products = [
   },
 ];
 
-export default function Home() {
+export const metadata = {
+  title: "JAI Technologies | AI, Cloud & Software Solutions",
+  description:
+    "JAI Technologies delivers AI automation, cloud transformation, software development, data engineering, DevOps, and enterprise technology solutions.",
+};
+
+export default function Home()
+ {
   return (
     <>
       <Hero />

@@ -60,6 +60,12 @@ const services = [
   },
 ];
 
+export const metadata = {
+  title: "Services | JAI Technologies",
+  description:
+    "AI Automation, Cloud Solutions, Data Engineering, DevOps, IT Consulting, and Custom Software Development services.",
+};
+
 export default function ServicesPage() {
   return (
     <main>
