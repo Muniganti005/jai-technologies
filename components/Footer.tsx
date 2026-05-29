@@ -39,11 +39,11 @@ export default function Footer() {
 
         <div>
           <h3>Products</h3>
-          <Link href="/products">CogniTip</Link>
-          <Link href="/products">CogniStar</Link>
-          <Link href="/products">CogniQuotes</Link>
-          <Link href="/products">CogniPoc</Link>
-          <Link href="/products">AI Automation Suite</Link>
+<Link href="/products/cognitip">CogniTip</Link>
+<Link href="/products/cognistar">CogniStar</Link>
+<Link href="/products/cogniquotes">CogniQuotes</Link>
+<Link href="/products/cognipoc">CogniPoc</Link>
+<Link href="/products">AI Automation Suite</Link>
         </div>
 
         <div>
