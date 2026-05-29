@@ -52,22 +52,40 @@ const services = [
 
 const products = [
   {
-    title: "CogniStar",
+    title: "CogniTip",
     description:
-      "AI-powered platform for intelligent automation and predictive insights.",
+      "AI-powered recommendation assistant that delivers smart tips, contextual suggestions, and business guidance.",
     icon: <Brain size={34} color="#2563eb" />,
   },
   {
-    title: "JAI Chatbot",
+    title: "CogniStar",
     description:
-      "Smart conversational AI for customer support and engagement.",
+      "Enterprise AI platform for automation, predictive insights, workflow intelligence, and decision support.",
+    icon: <Brain size={34} color="#2563eb" />,
+  },
+  {
+    title: "CogniQuotes",
+    description:
+      "Smart quote and proposal automation platform for generating accurate estimates and customer-ready documents.",
+    icon: <BarChart3 size={34} color="#2563eb" />,
+  },
+  {
+    title: "CogniPoc",
+    description:
+      "Rapid AI proof-of-concept builder for validating ideas, demos, and automation use cases quickly.",
+    icon: <Workflow size={34} color="#2563eb" />,
+  },
+  {
+    title: "Enterprise AI Chatbot",
+    description:
+      "Secure conversational AI assistant for customer support, lead capture, employee helpdesk, and operations.",
     icon: <Bot size={34} color="#2563eb" />,
   },
   {
-    title: "Analytics Dashboard",
+    title: "AI Automation Suite",
     description:
-      "Real-time analytics and business intelligence for enterprises.",
-    icon: <BarChart3 size={34} color="#2563eb" />,
+      "End-to-end automation platform for documents, workflows, reports, alerts, and operational efficiency.",
+    icon: <Workflow size={34} color="#2563eb" />,
   },
 ];
 
@@ -104,6 +122,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+        {/* ENTERPRISE STATS */}
+      <section className="stats-section">
+        <div className="jai-container">
+          <div className="stats-grid">
+            <div className="stat-card">
+              <h2>50+</h2>
+              <p>Projects Delivered</p>
+            </div>
+
+            <div className="stat-card">
+              <h2>10+</h2>
+              <p>Enterprise Solutions</p>
+            </div>
+
+            <div className="stat-card">
+              <h2>24/7</h2>
+              <p>Support & Monitoring</p>
+            </div>
+
+            <div className="stat-card">
+              <h2>100%</h2>
+              <p>Cloud Ready</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
 
       {/* SERVICES */}
       <section className="home-section">
