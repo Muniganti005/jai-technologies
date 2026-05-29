@@ -380,30 +380,40 @@ export default function Home() {
 
             <div className="process-card">
               <span>02</span>
-              <h3>Design</h3>
+              <h3>Plan</h3>
               <p>
-                Create scalable architecture, workflows, AI integrations, and
-                cloud-native solution strategies.
+              Define the roadmap, architecture, AI strategy, cloud approach,
+  and implementation plan for successful delivery.
               </p>
             </div>
 
             <div className="process-card">
               <span>03</span>
-              <h3>Develop</h3>
+<h3>Build</h3>
               <p>
-                Build secure, high-performance enterprise applications using
-                modern technologies and DevOps practices.
+                Build secure, scalable, and high-performance enterprise
+  solutions using modern technologies and best practices.
               </p>
             </div>
 
             <div className="process-card">
               <span>04</span>
-              <h3>Deploy & Scale</h3>
+<h3>Deploy</h3>
               <p>
-                Deploy solutions confidently with monitoring, automation,
-                optimization, and continuous support.
+                Deploy confidently with automation, monitoring,
+  security, and cloud-native infrastructure.
               </p>
             </div>
+
+            <div className="process-card">
+  <span>05</span>
+  <h3>Optimize</h3>
+  <p>
+    Continuously improve performance, automate workflows,
+    analyze insights, and scale for future growth.
+  </p>
+</div>
+
           </div>
         </div>
       </section>
