@@ -3,20 +3,32 @@ export default function CaseStudiesPage() {
     {
       title: "AI Banking Automation Platform",
       industry: "Banking",
-      description:
-        "Built an AI-powered workflow automation platform that reduced manual processing time by 60% and improved operational efficiency.",
+      challenge:
+        "Manual loan and customer onboarding processes caused delays and operational overhead.",
+      solution:
+        "Implemented AI-powered workflow automation and document intelligence.",
+      result:
+        "Reduced processing time by 60% and improved operational efficiency.",
     },
     {
       title: "Healthcare Analytics Dashboard",
       industry: "Healthcare",
-      description:
-        "Developed a cloud-native analytics solution for healthcare providers with real-time reporting and operational insights.",
+      challenge:
+        "Healthcare teams lacked real-time visibility into operational metrics.",
+      solution:
+        "Built a cloud-native analytics platform with centralized reporting.",
+      result:
+        "Enabled real-time decision-making and improved reporting accuracy.",
     },
     {
       title: "Retail Recommendation Engine",
       industry: "Retail",
-      description:
-        "Implemented AI-driven product recommendations that improved customer engagement and increased conversions.",
+      challenge:
+        "Low customer engagement and limited product discovery.",
+      solution:
+        "Developed an AI recommendation engine using customer behavior analytics.",
+      result:
+        "Increased customer engagement and improved conversion rates.",
     },
   ];
 
@@ -27,20 +39,44 @@ export default function CaseStudiesPage() {
           <small>CASE STUDIES</small>
           <h1>Real Solutions. Measurable Results.</h1>
           <p>
-            Explore how JAI Technologies helps organizations transform operations
-            using AI, cloud engineering, automation, and modern software solutions.
+            Explore how JAI Technologies helps organizations transform
+            operations using AI, cloud engineering, automation, and modern
+            software solutions.
           </p>
         </div>
       </section>
 
       <section className="home-section">
         <div className="jai-container">
+          <div className="section-title">
+            <small>SUCCESS STORIES</small>
+            <h2>How We Deliver Business Value</h2>
+            <p>
+              Discover how organizations leverage AI, cloud engineering,
+              automation, and data solutions to achieve measurable business
+              outcomes.
+            </p>
+          </div>
+
           <div className="cards-grid">
             {studies.map((study) => (
               <div className="clean-card" key={study.title}>
                 <small>{study.industry}</small>
                 <h3>{study.title}</h3>
-                <p>{study.description}</p>
+
+                <p>
+                  <strong>Challenge:</strong> {study.challenge}
+                </p>
+
+                <p>
+                  <strong>Solution:</strong> {study.solution}
+                </p>
+
+                <p>
+                  <strong>Results:</strong> {study.result}
+                </p>
+
+                <span className="learn-more">Read Case Study →</span>
               </div>
             ))}
           </div>

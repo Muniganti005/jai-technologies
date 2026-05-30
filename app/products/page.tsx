@@ -137,6 +137,73 @@ export default function ProductsPage() {
 </div>
         </div>
       </section>
+
+      <section className="home-section">
+  <div className="jai-container">
+    <div className="section-title">
+      <small>WHY JAI PRODUCTS</small>
+
+      <h2>Built for Real Business Impact</h2>
+
+      <p>
+        JAI Technologies products are designed to help organizations automate
+        processes, improve decision-making, accelerate delivery, and scale with
+        confidence.
+      </p>
+    </div>
+
+    <div className="cards-grid">
+      <div className="clean-card">
+        <h3>AI-Powered Innovation</h3>
+        <p>
+          Use intelligent automation and AI-driven insights to solve practical
+          business problems.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <h3>Enterprise Scalability</h3>
+        <p>
+          Built for growing businesses that need secure, reliable, and scalable
+          digital platforms.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <h3>Rapid Deployment</h3>
+        <p>
+          Move faster from idea to implementation with reusable product
+          frameworks and accelerators.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <h3>Secure Architecture</h3>
+        <p>
+          Designed with security, compliance awareness, and operational
+          reliability in mind.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <h3>Cloud-Native Design</h3>
+        <p>
+          Ready for modern cloud environments, integrations, APIs, and scalable
+          deployments.
+        </p>
+      </div>
+
+      <div className="clean-card">
+        <h3>Business Automation</h3>
+        <p>
+          Reduce manual work, improve team productivity, and create measurable
+          operational value.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }

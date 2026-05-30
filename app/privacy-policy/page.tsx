@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Privacy Policy | JAI Technologies",
+  description:
+    "Privacy Policy for JAI Technologies covering information collection, data usage, security, and contact details.",
+};
 export default function PrivacyPolicyPage() {
   return (
     <main>

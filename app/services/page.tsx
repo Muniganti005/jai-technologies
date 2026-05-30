@@ -19,20 +19,20 @@ const services = [
     icon: <Brain size={42} color="#2563eb" />,
   },
   {
-    title: "Cloud Solutions",
-    href: "/services/cloud-devops",
-    image: "/images/cloud-infra.png",
-    description:
-      "Cloud migration, AWS infrastructure, scalable deployments, and cloud-native modernization.",
-    icon: <Cloud size={42} color="#2563eb" />,
+  title: "Cloud Solutions",
+  href: "/services/cloud-devops",
+  image: "/images/cloud-infra.png",
+  description:
+    "Cloud migration, AWS infrastructure, scalable deployments, and cloud-native modernization.",
+  icon: <Cloud size={42} color="#2563eb" />,
   },
   {
-    title: "Custom Software Development",
-    href: "/services",
-    image: "/images/ai-dashboard.png",
-    description:
-      "Secure and scalable enterprise applications tailored for modern business needs.",
-    icon: <Code2 size={42} color="#2563eb" />,
+  title: "Custom Software Development",
+  href: "/services/custom-software",
+  image: "/images/ai-dashboard.png",
+  description:
+    "Secure and scalable enterprise applications tailored for modern business needs.",
+  icon: <Code2 size={42} color="#2563eb" />,
   },
   {
     title: "Data Engineering",
@@ -43,21 +43,13 @@ const services = [
     icon: <Database size={42} color="#2563eb" />,
   },
   {
-    title: "DevOps & Infrastructure",
-    href: "/services/cloud-devops",
-    image: "/images/cloud-infra.png",
-    description:
-      "CI/CD automation, monitoring, Kubernetes, Docker, and infrastructure optimization.",
-    icon: <Workflow size={42} color="#2563eb" />,
-  },
-  {
-    title: "IT Consulting",
-    href: "/services",
-    image: "/images/ai-dashboard.png",
-    description:
-      "Enterprise technology consulting, architecture planning, and digital transformation strategy.",
-    icon: <ShieldCheck size={42} color="#2563eb" />,
-  },
+  title: "IT Consulting",
+  href: "/services/it-consulting",
+  image: "/images/ai-dashboard.png",
+  description:
+    "Enterprise technology consulting, architecture planning, and digital transformation strategy.",
+  icon: <ShieldCheck size={42} color="#2563eb" />,
+},
 ];
 
 export const metadata = {

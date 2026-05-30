@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Terms of Service | JAI Technologies",
+  description:
+    "Terms of Service governing the use of JAI Technologies websites, products, services, and digital solutions.",
+};
+
 export default function TermsPage() {
   return (
     <main>
@@ -49,8 +55,7 @@ export default function TermsPage() {
 
             <h3>Contact Information</h3>
             <p>
-              For questions regarding these terms, contact us at
-              info@jaitechnologies.com.
+              For questions regarding these terms, please contact JAI Technologies through our Contact page.
             </p>
           </div>
         </div>

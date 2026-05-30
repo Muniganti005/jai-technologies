@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function CloudDevOpsPage() {
   return (
     <main>
@@ -12,6 +13,18 @@ export default function CloudDevOpsPage() {
           </p>
         </div>
       </section>
+
+      <section className="home-section">
+  <div className="jai-container">
+    <Image
+      src="/images/service-cloud.jpg"
+      alt="Cloud DevOps Services"
+      width={1200}
+      height={520}
+      className="service-hero-image"
+    />
+  </div>
+</section>
 
       <section className="home-section">
         <div className="jai-container">

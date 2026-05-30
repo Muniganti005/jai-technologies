@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Landmark,
   HeartPulse,
@@ -10,39 +11,39 @@ import {
 const industries = [
   {
     title: "Banking & Financial Services",
+    image: "/images/banking.jpg",
     description:
-      "Secure digital banking platforms, fraud detection, payment workflows, AI analytics, and cloud modernization for financial institutions.",
-    icon: <Landmark size={42} color="#2563eb" />,
+      "Secure digital banking platforms, fraud detection, payment workflows, AI analytics, and cloud modernization.",
   },
   {
     title: "Healthcare",
+    image: "/images/healthcare.jpg",
     description:
-      "AI-powered healthcare platforms, patient data systems, operational automation, analytics, and cloud-based healthcare solutions.",
-    icon: <HeartPulse size={42} color="#2563eb" />,
+      "AI-powered healthcare platforms, patient data systems, analytics, and cloud-based healthcare solutions.",
   },
   {
     title: "Retail & E-Commerce",
+    image: "/images/retail.jpg",
     description:
-      "Personalized shopping experiences, recommendation engines, inventory intelligence, customer engagement, and scalable commerce platforms.",
-    icon: <ShoppingCart size={42} color="#2563eb" />,
+      "Personalized shopping experiences, recommendation engines, customer engagement, and scalable commerce platforms.",
   },
   {
     title: "Insurance",
+    image: "/images/insurance.jpg",
     description:
-      "Claims automation, policy workflow systems, risk analytics, AI assistants, and secure digital insurance platforms.",
-    icon: <ShieldCheck size={42} color="#2563eb" />,
+      "Claims automation, policy workflow systems, risk analytics, and digital insurance solutions.",
   },
   {
     title: "Education",
+    image: "/images/education.jpg",
     description:
-      "Digital learning platforms, AI tutoring tools, student engagement systems, automation, and cloud-based education solutions.",
-    icon: <GraduationCap size={42} color="#2563eb" />,
+      "Digital learning platforms, AI tutoring tools, student engagement systems, and cloud education solutions.",
   },
   {
     title: "Startups & SMBs",
+    image: "/images/startups.jpg",
     description:
-      "Fast, scalable AI, cloud, web, and automation solutions for growing businesses that need enterprise-quality technology.",
-    icon: <Rocket size={42} color="#2563eb" />,
+      "Fast, scalable AI, cloud, web, and automation solutions for growing businesses.",
   },
 ];
 
@@ -79,15 +80,23 @@ export default function IndustriesPage() {
           </div>
 
           <div className="cards-grid">
-            {industries.map((industry) => (
-              <div className="clean-card" key={industry.title}>
-                {industry.icon}
-                <h3>{industry.title}</h3>
-                <p>{industry.description}</p>
-                <span className="learn-more">Learn More →</span>
-              </div>
-            ))}
-          </div>
+  {industries.map((industry) => (
+    <div className="clean-card" key={industry.title}>
+      <Image
+        src={industry.image}
+        alt={industry.title}
+        width={500}
+        height={300}
+      />
+
+      <h3>{industry.title}</h3>
+
+      <p>{industry.description}</p>
+
+      <span className="learn-more">Learn More →</span>
+    </div>
+  ))}
+</div>
         </div>
       </section>
     </main>
